@@ -159,7 +159,7 @@ if(isset($_SESSION['test'])){
     echo "<p>".$_SESSION['test']."</p>";
 }
 if(isset($_SESSION['short_url'])&&isset($_SESSION['long_url'])){
-    echo "<a style='text-align:center;' target='_blank' href='http://url-shtner.herokuapp.com/i.php?".$_SESSION['short_url']."'>http://url-shtner.herokuapp.com/i.php?".$_SESSION['short_url']."</a>";
+    echo "<a style='text-align:center;' target='_blank' href='i.php?".$_SESSION['short_url']."'>http://localhost/i.php?".$_SESSION['short_url']."</a>";
 }
 if (session_status() === PHP_SESSION_ACTIVE){
     session_destroy();
@@ -197,7 +197,7 @@ if(isset($_POST['submit1'])){
        while ($list = mysqli_fetch_assoc($res)){
            echo "
             <tr>
-                <td data-label='short_code'><a href = 'http://url-shtner.herokuapp.com/i.php?".$list['short_code']."'>http://url-shtner.herokuapp.com/i.php?".$list['short_code']."</a></td>
+                <td data-label='short_code'><a href = 'i.php?".$list['short_code']."'>http://localhost/i.php?".$list['short_code']."</a></td>
                 <td data-label='long_url'><a href='".$list['long_url']."'>".substr($list['long_url'],0,120)."</a></td>
                 <td data-label='Link Usages'>".$list['counter']."</td>
             </tr>";

@@ -9,4 +9,4 @@ It contains Another form that uses the POST method to redirect to the same file.
 It will Generate a List of all the URL's that were shortened which also contains the count of no. of times it was used
 
 
-http://url-shtner.herokuapp.com/ is the website that is deployed on Heroku.
+http://url-shtner.herokuapp.com/ is the website that is hosted using Heroku.

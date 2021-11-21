@@ -149,17 +149,17 @@ tr:nth-child(even) {
 include "conn.php";
 session_start();
 if(isset($_SESSION['present'])){
-    echo "</p>".$_SESSION['present']."</p>";
+    echo "<p>".$_SESSION['present']."</p>";
 }
 if(isset($_SESSION['err'])){
-    echo "</p>".$_SESSION['err']."</p>";
+    echo "<p>".$_SESSION['err']."</p>";
 }
 
 if(isset($_SESSION['test'])){
-    echo "</p>".$_SESSION['test']."</p>";
+    echo "<p>".$_SESSION['test']."</p>";
 }
 if(isset($_SESSION['short_url'])&&isset($_SESSION['long_url'])){
-    echo "<input type='text' value='http://url-shtner.herokuapp.com/i.php?".$_SESSION['short_url']."' id='myInput'><button onclick='myFunction()'>Copy</button>";
+    echo "<a style='text-align:center;' target='_blank' href='http://url-shtner.herokuapp.com/i.php?".$_SESSION['short_url']."'>http://url-shtner.herokuapp.com/i.php?".$_SESSION['short_url']."</a>";
 }
 if (session_status() === PHP_SESSION_ACTIVE){
     session_destroy();
@@ -187,7 +187,7 @@ if(isset($_POST['submit1'])){
       $res = mysqli_query($conn,  $sql);
       if (mysqli_num_rows($res) > 0) {
        echo "
-        <div style='margin-top:2%;'>
+        <div style='margin-top:1%;'>
             <table class='table' style='background-color:White;'>
                 <thead>
                     <th>Shorted url</th>

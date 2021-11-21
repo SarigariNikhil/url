@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 21, 2021 at 03:10 PM
+-- Generation Time: Nov 21, 2021 at 04:47 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 8.0.7
 
@@ -35,15 +35,6 @@ CREATE TABLE `urls_list` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `urls_list`
---
-
-INSERT INTO `urls_list` (`id`, `long_url`, `short_code`, `counter`) VALUES
-(1, 'https://www.google.com/', '663c5c', 6),
-(2, 'https://www.youtube.com/', '52fa78', 0),
-(3, 'https://www.google.com', '0dc0bd', 1);
-
---
 -- Indexes for dumped tables
 --
 
@@ -61,7 +52,7 @@ ALTER TABLE `urls_list`
 -- AUTO_INCREMENT for table `urls_list`
 --
 ALTER TABLE `urls_list`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -192,7 +192,7 @@ if(isset($_POST['submit1'])){
                 <thead>
                     <th>Shorted url</th>
                     <th>Actual url</th>
-                    <th>Link Usages</th>
+                    <th>Link Visits</th>
                 </thead>";
        while ($list = mysqli_fetch_assoc($res)){
            echo "

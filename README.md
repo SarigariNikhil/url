@@ -7,3 +7,6 @@ The short_url is of the format https://CDNS/i?XXXXXX. Here CDNS is the Custom Do
 The whole shorlUrl is sent to the index.php file. Now the index.php file Shows the url and also contains a copy button. 
 It contains Another form that uses the POST method to redirect to the same file.
 It will Generate a List of all the URL's that were shortened which also contains the count of no. of times it was used
+
+
+http://url-shtner.herokuapp.com/ is the website that is deployed on Heroku.
